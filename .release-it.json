@@ -10,5 +10,24 @@
   },
   "npm": {
     "publishArgs": ["--provenance"]
+  },
+  "plugins": {
+    "@release-it/conventional-changelog": {
+      "preset": {
+        "name": "Picathu",
+        "header": "# Changelog",
+        "types": [
+          {
+            "type": "feat",
+            "section": "Features"
+          },
+          {
+            "type": "fix",
+            "section": "Bug Fixes"
+          }
+        ]
+      },
+      "infile": "CHANGELOG.md"
+    }
   }
 }
