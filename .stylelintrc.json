@@ -1,1 +1,14 @@
-{ "extends": ["stylelint-config-standard"] }
+{
+  "extends": ["stylelint-config-standard"],
+  "plugins": ["stylelint-order"],
+  "rules": {
+    "color-named": "never",
+    "declaration-block-no-duplicate-custom-properties": true,
+    "function-disallowed-list": ["hwb", "lch"],
+    "order/properties-alphabetical-order": true,
+    "order/order": ["custom-properties", "declarations"],
+    "order/properties-order": ["width", "height"],
+    "block-no-empty": true,
+    "color-no-invalid-hex": true
+  }
+}
