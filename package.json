@@ -1,7 +1,21 @@
 {
-  "name": "session-workplace",
+  "name": "ng-picathu",
   "version": "0.0.0",
-  "private": true,
+  "private": false,
+  "description": "NGX-Picathu-utils is a library for angular that contains a lot of helper functions that can be used in any angular project",
+  "homepage": "https://github.com/PoulaHelmy/ng-picathu.git#readme",
+  "bugs": {
+    "url": "https://github.com/PoulaHelmy/ng-picathu.git/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PoulaHelmy/ng-picathu.git"
+  },
+  "license": "MIT",
+  "author": "Poula Helmy <poula.helmy.mousa@gmail.com>",
+  "contributors": [
+    "Poula Helmy <poula.helmy.mousa@gmail.com>"
+  ],
   "scripts": {
     "build": "ng build",
     "commit": "git-cz",
@@ -15,6 +29,7 @@
     "lint:package": "npmPkgJsonLint .",
     "lint:package-json": "npmPkgJsonLint .",
     "lint:packages": "pnpm dedupe --check",
+    "lint:prune": "ts-prune",
     "lint:spelling": "cspell \"**\" \".github/**/*\"",
     "ng": "ng",
     "prepare": "husky install",
@@ -54,11 +69,16 @@
     "@angular/compiler-cli": "^15.2.0",
     "@commitlint/cli": "^17.7.1",
     "@commitlint/config-conventional": "^17.7.0",
+    "@types/eslint": "^8.44.2",
+    "@types/git-url-parse": "^9.0.1",
     "@types/jasmine": "~4.3.0",
+    "@types/js-yaml": "^4.0.5",
     "@types/node": "^20.6.0",
+    "@types/prettier": "^2.7.3",
     "@typescript-eslint/eslint-plugin": "^5.48.2",
     "@typescript-eslint/parser": "^5.48.2",
     "commitizen": "^4.3.0",
+    "cspell": "^7.3.3",
     "cz-conventional-changelog": "^3.3.0",
     "cz-git": "^1.7.1",
     "eslint": "^8.33.0",
@@ -90,6 +110,7 @@
     "stylelint": "^15.10.3",
     "stylelint-config-standard": "^34.0.0",
     "stylelint-config-standard-scss": "^11.0.0",
+    "ts-prune": "^0.10.3",
     "typescript": "~4.9.4",
     "validate-branch-name": "^1.3.0",
     "yaml-eslint-parser": "^1.2.2"
