@@ -1,0 +1,7 @@
+/*
+ * Public API Surface of ng-picathu
+ */
+
+export * from './lib/ng-picathu.service';
+export * from './lib/ng-picathu.component';
+export * from './lib/ng-picathu.module';
