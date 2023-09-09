@@ -33,7 +33,7 @@
     "lint:spelling": "cspell \"**\" \".github/**/*\"",
     "ng": "ng",
     "prepare": "husky install",
-    "release": "release-it",
+    "release": "release-it --changelog",
     "should-semantic-release": "should-semantic-release --verbose",
     "start": "ng serve",
     "test": "ng test",
