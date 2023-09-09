@@ -10,4 +10,4 @@ export * from './lib/ng-picathu.module';
  */
 
 export * from './format';
-export * from './utils/utils';
+export * from './utils';
