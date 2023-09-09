@@ -14,7 +14,7 @@
   "plugins": {
     "@release-it/conventional-changelog": {
       "preset": {
-        "name": "Picathu",
+        "name": "angular",
         "header": "# Changelog",
         "types": [
           {
