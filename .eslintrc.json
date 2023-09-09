@@ -1,6 +1,6 @@
 {
   "root": true,
-  "ignorePatterns": ["projects/**/*"],
+  "ignorePatterns": ["projects/**/*", "projects/**/*.spec.ts"],
   "env": {
     "jasmine": false,
     "browser": true,
