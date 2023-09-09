@@ -1,5 +1,12 @@
 
 
+## [1.4.0](https://github.com/PoulaHelmy/ng-picathu/compare/1.3.1...1.4.0) (2023-09-09)
+
+
+### Features
+
+* :sparkles: updates ([a06a6a4](https://github.com/PoulaHelmy/ng-picathu/commit/a06a6a48d95e01d2c671a53ed08a95955c2b4635))
+
 ## [1.3.1](https://github.com/PoulaHelmy/ng-picathu/compare/1.3.0...1.3.1) (2023-09-09)
 
 ## [1.3.0](https://github.com/PoulaHelmy/ng-picathu/compare/1.1.0...1.3.0) (2023-09-09)
