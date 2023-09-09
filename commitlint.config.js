@@ -1,7 +1,7 @@
-const fs = require("fs");
-const path = require("path");
-const packages = fs.readdirSync(path.resolve(__dirname, "libs"));
-
+// const fs = require("fs");
+// const path = require("path");
+// const packages = fs.readdirSync(path.resolve(__dirname, "libs"));
+// ...packages,
 module.exports = {
   extends: ["@commitlint/config-conventional"],
   parserPreset: "conventional-changelog-conventionalcommits",
@@ -39,7 +39,7 @@ module.exports = {
     ]
   },
   prompt: {
-    alias: { fd: "docs: fix typos" },
+    alias: {fd: "docs: fix typos"},
     messages: {
       type: "Select the type of change that you're committing:",
       scope: "What is the scope of this change (e.g. component or file name)",
@@ -52,16 +52,20 @@ module.exports = {
       confirmCommit: "Are you sure you want to proceed with the commit above?"
     },
     types: [
-      { value: "feat", name: "feat:     ✨  A new feature", emoji: ":sparkles:" },
-      { value: "fix", name: "fix:      🐛  A bug fix", emoji: ":bug:" },
-      { value: "docs", name: "docs:     📝  Documentation only changes", emoji: ":memo:" },
-      { value: "style", name: "style:    💄  Changes that do not affect the meaning of the code", emoji: ":lipstick:" },
+      {value: "feat", name: "feat:     ✨  A new feature", emoji: ":sparkles:"},
+      {value: "fix", name: "fix:      🐛  A bug fix", emoji: ":bug:"},
+      {value: "docs", name: "docs:     📝  Documentation only changes", emoji: ":memo:"},
+      {
+        value: "style",
+        name: "style:    💄  Changes that do not affect the meaning of the code",
+        emoji: ":lipstick:"
+      },
       {
         value: "refactor",
         name: "refactor: ♻️   A code change that neither fixes a bug nor adds a feature",
         emoji: ":recycle:"
       },
-      { value: "perf", name: "perf:     ⚡️  A code change that improves performance", emoji: ":zap:" },
+      {value: "perf", name: "perf:     ⚡️  A code change that improves performance", emoji: ":zap:"},
       {
         value: "test",
         name: "test:     ✅  Adding missing tests or correcting existing tests",
@@ -72,9 +76,13 @@ module.exports = {
         name: "build:    📦️   Changes that affect the build system or external dependencies",
         emoji: ":package:"
       },
-      { value: "ci", name: "ci:       🎡  Changes to our CI configuration files and scripts", emoji: ":ferris_wheel:" },
-      { value: "chore", name: "chore:    🔨  Other changes that don't modify src or test files", emoji: ":hammer:" },
-      { value: "revert", name: "revert:   ⏪️  Reverts a previous commit", emoji: ":rewind:" }
+      {
+        value: "ci",
+        name: "ci:       🎡  Changes to our CI configuration files and scripts",
+        emoji: ":ferris_wheel:"
+      },
+      {value: "chore", name: "chore:    🔨  Other changes that don't modify src or test files", emoji: ":hammer:"},
+      {value: "revert", name: "revert:   ⏪️  Reverts a previous commit", emoji: ":rewind:"}
     ],
     useEmoji: true,
     emojiAlign: "center",
@@ -82,11 +90,10 @@ module.exports = {
     aiNumber: 1,
     themeColorCode: "",
     scopes: [
-      ...packages,
-      { value: "app", name: "app:       System business" },
-      { value: "home", name: "home:      Homepage" },
-      { value: "account", name: "account:   Account related" },
-      { value: "comment", name: "comment:   Comment related" }
+      {value: "app", name: "app:       System business"},
+      {value: "home", name: "home:      Homepage"},
+      {value: "account", name: "account:   Account related"},
+      {value: "comment", name: "comment:   Comment related"}
     ],
     enableMultipleScopes: true,
     scopeEnumSeparator: ",",
@@ -101,7 +108,7 @@ module.exports = {
     breaklineNumber: 100,
     breaklineChar: "|",
     skipQuestions: [],
-    issuePrefixes: [{ value: "closed", name: "closed:   ISSUES has been processed" }],
+    issuePrefixes: [{value: "closed", name: "closed:   ISSUES has been processed"}],
     customIssuePrefixAlign: "top",
     emptyIssuePrefixAlias: "skip",
     customIssuePrefixAlias: "custom",

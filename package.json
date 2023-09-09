@@ -19,7 +19,8 @@
     "lint:spelling": "cspell \"**\" \".github/**/*\"",
     "prepare": "husky install",
     "should-semantic-release": "should-semantic-release --verbose",
-    "lint:package": "npmPkgJsonLint ."
+    "lint:package": "npmPkgJsonLint .",
+    "commit": "git-cz"
   },
   "private": true,
   "dependencies": {
@@ -74,7 +75,8 @@
   },
   "config": {
     "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
+      "path": "node_modules/cz-git",
+      "useEmoji": true
     }
   }
 }
